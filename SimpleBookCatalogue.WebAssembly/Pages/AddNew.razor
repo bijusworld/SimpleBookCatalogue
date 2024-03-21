@@ -1,0 +1,26 @@
+﻿@page "/add-new"
+@using SimpleBookCatalogue.Domain.Entities
+@using SimpleBookCatalogue.Application.Services
+@inject IBookService BookService
+@inject NavigationManager Navigation
+
+
+<PageTitle>Add New Book</PageTitle>
+
+<div class="row justify-content-center">
+    <div class="col-6">
+        <BookForm IsEditMode="false" OnValidBookSubmit="AddBook"/>
+    </div>
+</div>
+
+@code {
+
+    // [SupplyParameterFromForm]
+    // public Book Book { get; set; } = new();
+
+    private async Task AddBook(Book book)
+    {
+        await BookService.AddAsync(book);
+        Navigation.NavigateTo("/");
+    }
+}

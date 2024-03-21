@@ -1,0 +1,37 @@
+﻿@page "/edit/{id:int}"
+@using SimpleBookCatalogue.Domain.Entities
+@using SimpleBookCatalogue.Application.Services
+@inject IBookService BookService
+@inject NavigationManager Navigation
+
+<PageTitle>
+    Edit Book
+</PageTitle>
+
+
+<div class="row justify-content-center">
+    <div class="col-6">
+        <BookForm IsEditMode="true" BookId="@Id" OnValidBookSubmit="EditBook"/>
+    </div>
+</div>
+
+
+@code {
+
+    [Parameter]
+    public int Id { get; set; }
+
+    // [SupplyParameterFromForm]
+    // public Book? Book { get; set; }
+
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     Book ??= await Repository.GetByIdAsync(Id);
+    // }
+
+    private async Task EditBook(Book book)
+    {
+        await BookService.UpdateAsync(book);
+        Navigation.NavigateTo("/");
+    }
+}

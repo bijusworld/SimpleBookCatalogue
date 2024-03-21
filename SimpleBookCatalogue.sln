@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBookCatalogue.Applica
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBookCatalogue.Infrastructure", "SimpleBookCatalogue.Infrastructure\SimpleBookCatalogue.Infrastructure.csproj", "{9D06A6AC-CD3C-43C2-BF9A-444F859E5A5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleBookCatalogue", "SimpleBookCatalogue\SimpleBookCatalogue.csproj", "{2814CABE-9B10-4395-951A-43866BFF2959}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBookCatalogue", "SimpleBookCatalogue\SimpleBookCatalogue.csproj", "{2814CABE-9B10-4395-951A-43866BFF2959}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBookCatalogue.WebAPI", "SimpleBookCatalogue.WebAPI\SimpleBookCatalogue.WebAPI.csproj", "{A684C999-B34B-48BB-B6F5-86D33830C227}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C8FE3289-A778-4BB0-89AB-E94D5EAD4FD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleBookCatalogue.WebAssembly", "SimpleBookCatalogue.WebAssembly\SimpleBookCatalogue.WebAssembly.csproj", "{8A8F2B55-6260-4DD7-8CA3-600022226E17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,22 @@ Global
 		{2814CABE-9B10-4395-951A-43866BFF2959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2814CABE-9B10-4395-951A-43866BFF2959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2814CABE-9B10-4395-951A-43866BFF2959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A684C999-B34B-48BB-B6F5-86D33830C227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A684C999-B34B-48BB-B6F5-86D33830C227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A684C999-B34B-48BB-B6F5-86D33830C227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A684C999-B34B-48BB-B6F5-86D33830C227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8F2B55-6260-4DD7-8CA3-600022226E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8F2B55-6260-4DD7-8CA3-600022226E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8F2B55-6260-4DD7-8CA3-600022226E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8F2B55-6260-4DD7-8CA3-600022226E17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2814CABE-9B10-4395-951A-43866BFF2959} = {C8FE3289-A778-4BB0-89AB-E94D5EAD4FD2}
+		{A684C999-B34B-48BB-B6F5-86D33830C227} = {C8FE3289-A778-4BB0-89AB-E94D5EAD4FD2}
+		{8A8F2B55-6260-4DD7-8CA3-600022226E17} = {C8FE3289-A778-4BB0-89AB-E94D5EAD4FD2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38339035-4F31-4957-9ABF-CE440D2C38E6}
